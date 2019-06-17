@@ -1,0 +1,26 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type"/>
+
+
+</head>
+
+<body>
+<h3>Web</h3>
+
+<h3 id="showmsg">调用js显示结果</h3>
+
+<input type="button" value="Js调用Java代码" onclick="h5GetAppToken()"/>
+
+<input type="button" value="Js调用Java代码并传参数"
+       onclick="window.JsToAndroid.jsCallAndroidArgs('Js传过来的参数')"/>
+
+<script type="text/javascript">
+           function h5GetAppToken(){
+                 var  value =  window.JsToAndroid.h5GetAppToken();
+                 document.getElementById("showmsg").innerHTML=value;
+            }
+</script>
+</body>
+
+</html>
